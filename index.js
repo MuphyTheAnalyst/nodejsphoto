@@ -40,6 +40,10 @@ app.get('/details/:userId', async (req, res) => {
     }
 });
 
+app.get('/test', async(req, res) => {
+  res.status(200).json({ message: 'Test message api'});
+});
+
 app.post('/details', async (req, res) => {
     const detail = req.body;
     try {
